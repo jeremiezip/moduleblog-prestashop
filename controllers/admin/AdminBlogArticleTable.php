@@ -12,14 +12,14 @@ class AdminBlogArticleTableController extends ModuleAdminController
 		$this->className = 'Article';
 		$this->lang = true;
 		$this->noLink = true;
-        $this->context = Context::getContext();
+        	$this->context = Context::getContext();
 
-        $this->bulk_actions = array(
-            'delete' => array(
-                'text' => $this->l('Delete selected'),
-                'confirm' => $this->l('Delete selected items?')
-                )
-            );		
+        	$this->bulk_actions = array(
+	            'delete' => array(
+	                'text' => $this->l('Delete selected'),
+	                'confirm' => $this->l('Delete selected items?')
+	                )
+	            );		
 
 		parent::__construct();
 		
